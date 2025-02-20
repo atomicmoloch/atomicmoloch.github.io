@@ -64,4 +64,7 @@ further the common good.
 The epistemic argument also recognizes that individual decisionmakers can err
 and make decisions that run counter to the common good.
 
-<!-- egalitatian argument here -->
+The **equality-based** or **egalitarian** argument is based on the ideal that a 
+legislature is to emphasize the rights of all participants to have a voice and
+promote their own subjective choice. Choices of participants would ideally be
+weighted as close to equally as possible. 
