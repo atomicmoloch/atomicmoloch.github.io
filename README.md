@@ -14,3 +14,6 @@ Blog post for Characterizing Properties and Trade-offs of Centralized Delegation
 - Agents' right to top rank
 - Limiting concentrated power
 - Avoiding arbitrary decisions
+
+## Index
+Add links to pages here as they're created and written. 
