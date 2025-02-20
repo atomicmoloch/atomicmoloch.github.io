@@ -16,4 +16,4 @@ Blog post for Characterizing Properties and Trade-offs of Centralized Delegation
 - Avoiding arbitrary decisions
 
 ## Index
-Add links to pages here as they're created and written. 
+- [Introduction to Liquid Democracy](intro)
