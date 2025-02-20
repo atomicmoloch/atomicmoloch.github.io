@@ -8,7 +8,7 @@ Readers who are new to the site may wish to start at our
 # Index
 - [Introduction and background](intro)
 - [Brubach, Ballarin, and Nazeer's model of liquid democracy mechanisms](bbn_model)
+- [Liquid Democracy Properties](properties)
 
 
 [bbn]: https://arxiv.org/pdf/2206.05339
-
