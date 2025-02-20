@@ -9,6 +9,7 @@ It represents a variation on direct democracy and republican government that
 combines the granular and individualistic characteristics of voting within a
 direct democracy with the practical concessions that make republican government
 a superior system to unaltered direct democracy.
+
 Liquid democracy also represents an expansion and evolution of the concept of
 proxy voting
 (commonly used in situations such as shareholder votes, where every shareholder
@@ -31,13 +32,13 @@ typical of the *status quo*.
 The ideals of liquid democracy can be expressed through four fundamental
 principles (as given by
 [Blum and Zuber][bz]):
-1. Direct democracy: all voters are able to vote on specific policy issues.
-2. Flexible delegation: all voters have the option to delegate their votes to
+1. **Direct democracy:** all voters are able to vote on specific policy issues.
+2. **Flexible delegation:** all voters have the option to delegate their votes to
     another voter, and are able to do so for particular votes, by policy area,
     or completely.
-3. Meta-delegation: voters to whom votes are delegated can further delegate
+3. **Meta-delegation:** voters to whom votes are delegated can further delegate
     these votes.
-4. Instant recall: any voter is able to cancel any of their individual
+4. **Instant recall:** any voter is able to cancel any of their individual
     delegations at any time.
 
 To satisfy these ideals, a liquid democracy mechanism must receive particular
