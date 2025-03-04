@@ -9,6 +9,9 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 ## Google Votes
 
 Google Votes was used internally by Google between 2012 and 2015 to vote to make inconsequential community decisions, such as those regarding meals, snacks, and internal project logos. It was implemented as a web app on the internal corporate Google+ network, in an opaque fashion that leaves ambiguity regarding some of the precise workings of its central delegation mechanism. In particular, it is ambiguous how the mechanism chooses among multiple possible delegation paths in the case of delegation cycles.
+
+The mechanism functions by conducting a breadth-first search, starting at each agent who directly voted. Then, duplicate votes are removed by taking the highest ranked path between a delegating agent and a voter. According to the [Google Techtalk][google], from which most information regarding Google Votes is derived, cycles are not allowed, but the mechanism for breaking cycles is never explained.
+
 The Google Votes mechanism guarentees single-path explainability for each voter's individual vote, but cannot do so for all votes delegated to a voter, as proven in [Theorem 5.1](theorems).
 
 ## LiquidFeedback
@@ -21,3 +24,4 @@ The Google Votes mechanism guarentees single-path explainability for each voter'
 
 [kahng]: https://cdn.aaai.org/ojs/11468/11468-13-14996-1-2-20201228.pdf
 [golz]: https://arxiv.org/pdf/1808.01906
+[google]: https://www.youtube.com/watch?v=F4lkCECSBFw
