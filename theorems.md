@@ -12,4 +12,10 @@ Proof: The paper notes that this property can be clearly observed with two agent
 
 Theorem 5.1. Any tally algorithm which must delegate each agent’s vote to its highest ranked neighbor through which a delegation path exists, only allows simple paths, and guarantees that the vote will eventually reach a voter, cannot satisfy 1-path explainability.
 
+!(google_votes_ambiguity.png)
+
 Theorem 5.2. No deterministic mechanism with multiple unranked preferences can simultaneously satisfy the right to delegate, single-path explainability, and no arbitrary decisions.
+
+Proof: The following delegation graph requires the algorithm to make an arbitrary decision.
+
+!(fluid_mechanics_arbitrary.png)
