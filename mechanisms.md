@@ -111,7 +111,7 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Monotonic:** No. Brubach, Ballarin, and Nazeer provide a counterexample, depicted below. Changing a~1~'s delegation from a~3~ to a~2~ worsens the outcome of a~2~.
 
-<img src="fluid_mechanics_monotonicity.png" width="250">
+<img src="fluid_mechanics_monotonicity.png" width="400">
 
 **Right to Delegate:** Yes.
 
