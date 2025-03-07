@@ -10,11 +10,11 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Background:** Google Votes was used internally by Google between 2012 and 2015 to vote to make inconsequential community decisions, such as those regarding meals, snacks, and internal project logos. Information is primary available through a [Google Techtalk][google] from 2014, which does not fully explain the algorithm used by the central delegation mechanism.  In particular, it is ambiguous how the mechanism chooses among multiple possible delegation paths in the case of delegation cycles.
 
-**Mechanism:** The mechanism functions by conducting a breadth-first search, starting at each agent who directly voted. Then, duplicate votes are removed by taking the highest ranked path between a delegating agent and a voter.
+**Mechanism:** The mechanism functions by conducting a breadth-first search, starting at each agent who directly voted. Then, duplicate votes are removed by taking the (lexicographically) highest ranked path between a delegating agent and a voter.
 
 **Cycle resolution:** According to the Google Techtalk, cycles are not allowed, but the mechanism for breaking cycles is never explained. Brubach, Ballarin, and Nazeer theorize that it may either break cycles by choosing the shortest path to a voter (breadth-first), or by removing the last edge in a cycle (depth-first). Either way, the place that the vote ends up is determined by the position of the initial delegator in the cycle, and a vote delegated to an agent may end up at a different place than the personal vote which that agent delegates.
 
-**Tractability:** Lack of documentation prevents the exact running time from being known, except that enumerating all paths between agents and voters is lower bounded by the number of paths (n^2^). Brubach et al note that polynomial-time algorithms can be devised for each of their theorized resolution steps.
+**Tractability:** Lack of documentation prevents the exact running time from being known, except that enumerating all paths between agents and voters is lower bounded by the number of paths (n<sup>2</sub>). Brubach et al note that polynomial-time algorithms can be devised for each of their theorized resolution steps.
 
 **Logically predictable:** Yes.
 
@@ -109,7 +109,7 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Logically Predictable:** No. As proven in [Theorem 5.2](theorems), a deterministic mechanism with multiple unranked preferences, single-path explainability, and which always maintains the right to delegate, must make arbitrary decisions. This is easily seen with n = 3, where one agent has includes the other two agents, who are voters, in their delegation preferences. Then the mechanism must arbitrarily choose which voter to give that agent's vote to. This could be solved, perhaps, by using a ranking which is only used in such tiebreaking situations, as the breadth-first mechanism does.
 
-**Monotonic:** No. Brubach, Ballarin, and Nazeer provide a counterexample, depicted below. Changing a~1~'s delegation from a~3~ to a~2~ worsens the outcome of a~2~.
+**Monotonic:** No. Brubach, Ballarin, and Nazeer provide a counterexample, depicted below. Changing a<sub>1</sub>'s delegation from a<sub>3</sub> to a<sub>2</sub> worsens the outcome of a<sub>2</sub>.
 
 <img src="fluid_mechanics_monotonicity.png" width="400">
 

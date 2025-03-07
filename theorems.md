@@ -24,7 +24,7 @@ Here is an even more minimal example:
 
 <img src="google_votes_minimal.png" width="250">
 
-$a_1$'s vote must be delegated to $a_2$, as the algorithm "must delegate each agent’s vote to its highest ranked neighbor through which a delegation path exists". From there, there is only one simple path by which it may reach a voter, by delegating it to $a_3$. Similarly, $a_2$'s vote must be delegated to $a_1$, from which it must be delegated to $a_4$, who votes. Thus, the vote which is delegated to $a_1$ follows a different path than $a_1$'s own vote, and the algorithm cannot satisfy 1-path explainability.
+a<sub>1</sub>'s vote must be delegated to a<sub>2</sub>, as the algorithm "must delegate each agent’s vote to its highest ranked neighbor through which a delegation path exists". From there, there is only one simple path by which it may reach a voter, by delegating it to a<sub>3</sub>. Similarly, a<sub>2</sub>'s vote must be delegated to $a_1$, from which it must be delegated to a<sub>4</sub>, who votes. Thus, the vote which is delegated to $a_1$ follows a different path than a<sub>1</sub>'s own vote, and the algorithm cannot satisfy 1-path explainability.
 
 **Theorem 5.2. No deterministic mechanism with multiple unranked preferences can simultaneously satisfy the right to delegate, single-path explainability, and no arbitrary decisions.
 
@@ -32,4 +32,4 @@ Proof: Brubach, Ballarin, and Nazeer present the following delegation graph as a
 
 <img src="fluid_mechanics_arbitrary.png" width="250">
 
-As $a_2$ and $a_3$ are indistinguishable, and $a_1$ must be able to delegate their entire vote to either $a_2$ or $a_3$, the algorithm must make an arbitrary decision.
+As a<sub>2</sub> and a<sub>3</sub> are indistinguishable, and a<sub>1</sub> must be able to delegate their entire vote to either a<sub>2</sub> or a<sub>3</sub>, the algorithm must make an arbitrary decision.
