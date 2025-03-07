@@ -14,7 +14,7 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Cycle resolution:** According to the Google Techtalk, cycles are not allowed, but the mechanism for breaking cycles is never explained. Brubach, Ballarin, and Nazeer theorize that it may either break cycles by choosing the shortest path to a voter (breadth-first), or by removing the last edge in a cycle (depth-first). Either way, the place that the vote ends up is determined by the position of the initial delegator in the cycle, and a vote delegated to an agent may end up at a different place than the personal vote which that agent delegates.
 
-**Tractability:** Lack of documentation prevents the exact running time from being known, except that enumerating all paths between agents and voters is lower bounded by the number of paths ($n^2$). Brubach et al note that polynomial-time algorithms can be devised for each of their theorized resolution steps.
+**Tractability:** Lack of documentation prevents the exact running time from being known, except that enumerating all paths between agents and voters is lower bounded by the number of paths (n^2^). Brubach et al note that polynomial-time algorithms can be devised for each of their theorized resolution steps.
 
 **Logically predictable:** Yes.
 
@@ -101,6 +101,10 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Logically Predictable:** No. As proven in [Theorem 5.2](theorems), a deterministic mechanism with multiple unranked preferences, single-path explainability, and which always maintains the right to delegate, must make arbitrary decisions. This is easily seen with n = 3, where one agent has includes the other two agents, who are voters, in their delegation preferences. Then the mechanism must arbitrarily choose which voter to give that agent's vote to. This could be solved, perhaps, by using a ranking which is only used in such tiebreaking situations, as the breadth-first mechanism does.
 
+**Monotonic:** No. Brubach, Ballarin, and Nazeer provide a counterexample, depicted below. Changing a~1~'s delegation from a~3~ to a~2~ worsens the outcome of a~2~.
+
+<img src="fluid_mechanics_monotonicity.png" width="250">
+
 **Right to Delegate:** Yes.
 
 **Right to Top Rank:** N/A
@@ -108,7 +112,6 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 **Single-path explainability:** Yes.
 
 **Limits on power:** The number of votes delegated to each voter is minimized.
-
 
 [kahng]: https://cdn.aaai.org/ojs/11468/11468-13-14996-1-2-20201228.pdf
 [golz]: https://arxiv.org/pdf/1808.01906
