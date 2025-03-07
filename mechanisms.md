@@ -4,7 +4,7 @@ title: "Existing Mechanisms"
 
 # Existing Mechanisms
 
-The paper starts by analyzing the properties of the two liquid democracy mechanisms that have been put into real world use in any substantive capacity: Google Votes and LiquidFeedback. It then covers two further mechanisms that have been proposed in papers: [GreedyCap][kahng] and a [fluid mechanics model][golz].
+The paper starts by analyzing the properties of the two liquid democracy mechanisms that have been put into real world use in any substantive capacity: Google Votes and LiquidFeedback. It then covers three further mechanisms that have been proposed in papers: Breadth-first, Greedycap, and a fluid dynamics model.
 
 ## Google Votes
 
@@ -16,11 +16,13 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Tractability:** Lack of documentation prevents the exact running time from being known, except that enumerating all paths between agents and voters is lower bounded by the number of paths ($n^2$). Brubach et al note that polynomial-time algorithms can be devised for each of their theorized resolution steps.
 
-**Single-path explainability:** No. The Google Votes mechanism guarentees single-path explainability for each voter's individual vote, but cannot do so for all votes delegated to a voter, as proven in [Theorem 5.1](theorems).
+**Logically predictable:** Yes.
 
 **Right to Delegate:** Yes. No agent will be compelled to vote if they would rather delegate.
 
 **Right to Top Rank:** Yes. The algorithm guarentees that every agent's top ranked neighbor preference is honored.
+
+**Single-path explainability:** No. The Google Votes mechanism guarentees single-path explainability for each voter's individual vote, but cannot do so for all votes delegated to a voter, as proven in [Theorem 5.1](theorems).
 
 **Limits on power**: None.
 
@@ -34,9 +36,13 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Tractability**: The tally algorithm runs in O(n) time.
 
-**Single-path explainability:** Yes.
+**Logically predictable:** Yes.
 
 **Right to Delegate:** Yes.
+
+**Right to Top Rank:** N/A
+
+**Single-path explainability:** Yes.
 
 **Limits on power:** None.
 
@@ -50,9 +56,15 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Tractability:** The mechanism runs in O(n+m) time.
 
+**Logically predictable:** Yes.
+
 **Right to Delegate:** Yes.
 
-**Right to Top Rank:** No.
+**Right to Top Rank:** N/A
+
+**Right to Top Rank:** No. A lower-ranked agent will receive an agent's votes if it is closer in the voting graph to a voter.
+
+**Single-path explainability:** Yes.
 
 **Limits on power:** No direct mechanisms to limit power, but the authors who posited the system theorize that it may limit concentrated power in practice.
 
@@ -67,9 +79,13 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Tractability:** The greedy algorithm runs in O(n log n) time.
 
-**Single-path explainability:** Yes.
+**Logically predictable:** Brubach, Ballarin, and Nazeer say yes. However, the choice of delegations to honor in cases where greater than C - 1 votes are delegated to a single agent appears arbitrary, and could have an effect on the result in practice at least (suppose the contrived case where 2C agents delegate to a single voter, who votes Yes. C + 1 of the delegating agents would vote No, while the rest would vote yes. Then the arbitrary choice of delegations to honor would deccide the election).
 
 **Right to Delegate:** No. As proven in [Theorem 4.1](theorems), no mechanism using one neighbor preference and capped power can satisfy the right to delegate for any cap less than the number of voters.
+
+**Right to Top Rank:** N/A
+
+**Single-path explainability:** Yes.
 
 **Limits on power:** An individuals' votes are capped at C.
 
@@ -83,13 +99,16 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Tractability:** Finding the optimal flow graph is NP-hard.
 
-**Single-path explainability:** Yes.
+**Logically Predictable:** No. As proven in [Theorem 5.2](theorems), a deterministic mechanism with multiple unranked preferences, single-path explainability, and which always maintains the right to delegate, must make arbitrary decisions. This is easily seen with n = 3, where one agent has includes the other two agents, who are voters, in their delegation preferences. Then the mechanism must arbitrarily choose which voter to give that agent's vote to. This could be solved, perhaps, by using a ranking which is only used in such tiebreaking situations, as the breadth-first mechanism does.
 
 **Right to Delegate:** Yes.
 
+**Right to Top Rank:** N/A
+
+**Single-path explainability:** Yes.
+
 **Limits on power:** The number of votes delegated to each voter is minimized.
 
-**Logically predictable:** No. As proven in [Theorem 5.2](theorems), a deterministic mechanism with multiple unranked preferences, single-path explainability, and which always maintains the right to delegate, must make arbitrary decisions. This is easily seen with n = 3, where one agent has includes the other two agents, who are voters, in their delegation preferences. Then the mechanism must arbitrarily choose which voter to give that agent's vote to. This could be solved, perhaps, by using a ranking which is only used in such tiebreaking situations, as the breadth-first mechanism does.
 
 [kahng]: https://cdn.aaai.org/ojs/11468/11468-13-14996-1-2-20201228.pdf
 [golz]: https://arxiv.org/pdf/1808.01906
