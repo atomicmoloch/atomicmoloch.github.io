@@ -18,6 +18,8 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Logically predictable:** Yes.
 
+**Monotonic:** Yes.
+
 **Right to Delegate:** Yes. No agent will be compelled to vote if they would rather delegate.
 
 **Right to Top Rank:** Yes. The algorithm guarentees that every agent's top ranked neighbor preference is honored.
@@ -32,11 +34,13 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Mechanism:** Agents can either vote directly, or specify a single agent to delegate all of their votes to. Each voter has a number of votes equivalent to the number of nodes discoverable from a breadth-first search on the reversed delegation graph, starting from that voter.
 
-**Cycle resolution:** There is no attempt to resolve cycles; should a cycle exist, all votes contained within it will be wasted.
+**Cycle resolution:** None. Should a cycle exist, all votes contained within it will be wasted.
 
 **Tractability**: The tally algorithm runs in O(n) time.
 
 **Logically predictable:** Yes.
+
+**Monotonic:** Yes.
 
 **Right to Delegate:** Yes.
 
@@ -58,6 +62,8 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Logically predictable:** Yes.
 
+**Monotonic:** Yes.
+
 **Right to Delegate:** Yes.
 
 **Right to Top Rank:** N/A
@@ -75,11 +81,13 @@ The paper starts by analyzing the properties of the two liquid democracy mechani
 
 **Mechanism:** Taking as input an unweighted, directed delegation graph (one neighbor preferences) and a cap C, A greedy algorithm chooses the agent v with the most delegated votes (incoming edges), and up to C - 1 agents who delegated their votes to v. Agent v votes with the votes of all the chosen nodes and then all chosen nodes, including v, are removed from the graph. These steps are repeated until no nodes exist on the graph.
 
-**Cycle resolution:** Under the supposition that agents will only delegate to agents with strictly higher competency levels, cycles are impossible, and the mechanism does not concern itself with them.
+**Cycle resolution:** None. Under the supposition that agents will only delegate to agents with strictly higher competency levels, cycles are impossible, and the mechanism does not concern itself with them.
 
 **Tractability:** The greedy algorithm runs in O(n log n) time.
 
 **Logically predictable:** Brubach, Ballarin, and Nazeer say yes. However, the choice of delegations to honor in cases where greater than C - 1 votes are delegated to a single agent appears arbitrary, and could have an effect on the result in practice at least (suppose the contrived case where 2C agents delegate to a single voter, who votes Yes. C + 1 of the delegating agents would vote No, while the rest would vote yes. Then the arbitrary choice of delegations to honor would deccide the election).
+
+**Monotonic:** Yes.
 
 **Right to Delegate:** No. As proven in [Theorem 4.1](theorems), no mechanism using one neighbor preference and capped power can satisfy the right to delegate for any cap less than the number of voters.
 
