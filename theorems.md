@@ -18,11 +18,11 @@ Any tally algorithm which must delegate each agent’s vote to its highest ranke
 
 **Proof:** Brubach, Ballarin, and Nazeer present the following delegation graph as a counterexample.
 
-<img src="google_votes_ambiguity.png" width="150">
+<img src="google_votes_ambiguity.png" width="250">
 
 Here is an even more minimal example:
 
-<img src="google_votes_minimal.png" width="150">
+<img src="google_votes_minimal.png" width="250">
 
 $a_1$'s vote must be delegated to $a_2$, as the algorithm "must delegate each agent’s vote to its highest ranked neighbor through which a delegation path exists". From there, there is only one simple path by which it may reach a voter, by delegating it to $a_3$. Similarly, $a_2$'s vote must be delegated to $a_1$, from which it must be delegated to $a_4$, who votes. Thus, the vote which is delegated to $a_1$ follows a different path than $a_1$'s own vote, and the algorithm cannot satisfy 1-path explainability.
 
@@ -30,6 +30,6 @@ $a_1$'s vote must be delegated to $a_2$, as the algorithm "must delegate each ag
 
 Proof: Brubach, Ballarin, and Nazeer present the following delegation graph as a counterexample.
 
-<img src="fluid_mechanics_arbitrary.png" width="150">
+<img src="fluid_mechanics_arbitrary.png" width="250">
 
 As $a_2$ and $a_3$ are indistinguishable, and $a_1$ must be able to delegate their entire vote to either $a_2$ or $a_3$, the algorithm must make an arbitrary decision.
