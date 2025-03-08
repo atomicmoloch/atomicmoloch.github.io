@@ -5,11 +5,13 @@ title: "Modeling Liquid Democracy Mechanisms"
 
 A *preference graph* is a graph of delegation preferences. A directed edge between agent *u* and agent *v* indicates that *u* would rather delegate their vote to *v* than vote directly.
 
-A *delegation graph* is the graph of the actual delegations. In other words, a directec edge between agent *u* and agent *v* means that agent *v* has actually been delegated agent *u*'s vote.
+A *delegation graph* is the graph of the actual delegations. In other words, a directed edge between agent *u* and agent *v* means that agent *v* has actually been delegated agent *u*'s vote.
 
 In certain liquid democracy mechanisms, such as LiquidFeedback, the preference graph *is* the delegation graph. In others, a *tally algorithm* is used to resolve a preference graph into a delegation graph.
 
-Here are definitions for some terminology used by Brubach, Ballarin, and Nazeer, with definitions which may not be obviously apparent.
+# Definitions
+This model defines certain terms to describe the functioning of a liquid
+democracy mechanism and its inputs:
 
 **Ground truth:** When operating under the assumption that, in a choice of options, there is one 'correct' option and one or more 'incorrect' options, the ground truth is the correct option.
 
