@@ -63,8 +63,53 @@ is to discover the truth and incorporate that truth into legislation designed to
 further the common good.
 The epistemic argument also recognizes that individual decisionmakers can err
 and make decisions that run counter to the common good.
-
-The **equality-based** or **egalitarian** argument is based on the ideal that a 
-legislature is to emphasize the rights of all participants to have a voice and
-promote their own subjective choice. Choices of participants would ideally be
+The **equality-based** or **egalitarian argument** is based on the ideal that a 
+political system is to emphasize the rights of all participants to have a voice
+and
+promote their own subjective choice.
+In the egalitarian argument, a political system derives its legitimacy from its
+ability to express
+As such, choices of participants would ideally be
 weighted as close to equally as possible. 
+
+Liquid democracy is arguably superior to both representative and direct
+democracy under both arguments.
+Liquid democracy can mitigate the effects of a single representative or
+legislator being corrupt
+through instant recall and can allow for more direct expression of the judgment
+of particular experts within their areas of expertise than can be achieved
+within a representative democracy that must rely indirectly on the staff of a
+legislator and external interest groups.
+Further, liquid democracy allows a voter to delegate a particular facet of their
+voting power to an expert within the latter's field of expertise and allows a
+voter to, more generally, rely on those who are more engaged in political
+matters to make decisions on their behalf rather than necessitating that each
+voter pay attention to each policy issue.
+This targeted engagement of expertise produces epistemically-superior
+policymaking compared to both
+representative and direct democracy.
+Liquid democracy is centered around an individual's
+right to vote on any policy issue they desire while also allowing individuals to
+transfer their voting power in a fluid, directed, and granular fashion.
+In this way it supports individuals' rights to freely associate.
+Further, liquid democracy allows for representation while maintaining
+transparency and accountability,
+allowing individuals to most effectively use their equal voting power and
+reducing the risk that an individual would try to use another individual's
+political power to the latter's detriment.
+As such, liquid democracy provides many advantages when compared to direct and
+representative democracy through an egalitarian lens.
+
+When characterizing the benefits, drawbacks, and properties of
+particular
+mechanisms for liquid democracy, it is critically important to consider each in
+light of the ultimate premises upon which liquid democracy is justified.
+This allows for tradeoffs to be evaluated in their proper context and with
+proper regard for the reasons liquid democracy is supported as a political
+system.
+To this end, 
+[Brubach, Ballarin, and Nazeer][bbn]'s paper defines
+[certain concrete traits](/properties)
+of
+liquid democracy mechanisms that further the epistemic accuracy and equality of
+a particular liquid democracy mechanism.
