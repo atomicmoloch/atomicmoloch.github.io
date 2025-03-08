@@ -7,7 +7,7 @@ A *preference graph* is a graph of delegation preferences. A directed edge betwe
 
 A *delegation graph* is the graph of the actual delegations. In other words, a directed edge between agent *u* and agent *v* means that agent *v* has actually been delegated agent *u*'s vote.
 
-In certain liquid democracy mechanisms, such as LiquidFeedback, the preference graph *is* the delegation graph. In others, a *tally algorithm* is used to resolve a preference graph into a delegation graph.
+In certain liquid democracy mechanisms, such as [LiquidFeedback](/mechanisms#liquidfeedback), the preference graph *is* the delegation graph. In others, a *tally algorithm* is used to resolve a preference graph into a delegation graph.
 
 # Definitions
 This model defines certain terms to describe the functioning of a liquid
